@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio da Astronauta - Calculadora de Órbitas</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de Background -->
+    <video id="background-video" autoplay muted loop>
+      <source src="assets/background.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <!-- Container Principal -->
+    <div class="main-container">
+      <!-- Título -->
+      <h1>Calculadora de Órbitas Espaciais</h1>
+      <p class="subtitle">Calcule a soma dos múltiplos de 3 ou 5 abaixo de um número limite</p>
+
+      <!-- Input de Entrada -->
+      <div class="input-section">
+        <label for="limit-input">Limite Superior:</label>
+        <input type="number" id="limit-input" placeholder="Digite o limite (ex: 1000)" min="1" max="10000" />
+      </div>
+
+      <!-- Área dos Botões -->
+      <div class="buttons-section">
+        <button class="custom-btn btn-11" id="calculate-btn">
+          CALCULAR
+          <div class="dot"></div>
+        </button>
+        <button class="custom-btn btn-11" id="return-btn">
+          RETORNAR
+          <div class="dot"></div>
+        </button>
+      </div>
+
+      <!-- Seção de Resultado -->
+      <div class="result-section" id="result-section">
+        <h3>Resultado da Missão</h3>
+        <div class="result-content" id="result-content">
+          <!-- O resultado será inserido aqui via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
